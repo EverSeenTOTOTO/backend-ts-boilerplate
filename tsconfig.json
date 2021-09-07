@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./dist/",
+    "outDir": "dist/",
     "baseUrl": ".",
     "strict": true,
     "noEmit": true,
@@ -29,9 +29,9 @@
     }
   },
   "include": [
-    "src/**/*",
+    "src/**/*"
   ],
   "exclude": [
-    "*/__test__/**/*"
+    "*/__tests__/**/*"
   ]
 }
