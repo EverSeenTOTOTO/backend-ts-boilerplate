@@ -4,12 +4,11 @@ module.exports = {
   coverageProvider: 'v8',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^@test/(.*)$': '<rootDir>/src/__tests__/$1',
   },
   rootDir: '.',
   testEnvironment: 'node',
   testMatch: [
-    '**/__tests__/**/*.test.ts',
+    '**/*.test.ts',
   ],
   testPathIgnorePatterns: [
     '/node_modules/',

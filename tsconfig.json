@@ -8,7 +8,6 @@
     "outDir": "dist/",
     "baseUrl": ".",
     "strict": true,
-    "emitDeclarationOnly": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
