@@ -11,6 +11,8 @@ clean:
 	-rm -r ${DIST}
 
 build: clean
+	npx tsc -p . 
+	npx tsc-alias
 	npx rollup -c rollup.config.js
 
 start: build

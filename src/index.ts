@@ -8,3 +8,5 @@ dotenv.config();
 export const hello = `${process.env.HELLO} ${world}`;
 
 console.log(hello);
+
+export type { World } from '@/aliase';
