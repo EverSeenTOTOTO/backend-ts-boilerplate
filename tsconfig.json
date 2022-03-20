@@ -13,8 +13,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
       "types": [
-        "jest",
-        "reflect-metadata"
+        "jest"
       ],
     "esModuleInterop": true,
     "experimentalDecorators": true,

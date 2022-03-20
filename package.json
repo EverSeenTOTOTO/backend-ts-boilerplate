@@ -2,10 +2,7 @@
   "name": "nodejs-ts-boilerplate",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "reflect-metadata": "^0.1.13"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/plugin-transform-runtime": "^7.14.5",
