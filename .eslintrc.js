@@ -20,7 +20,10 @@ module.exports = {
     'jest',
   ],
   rules: {
+    'max-len': 'off',
     'no-console': 'off',
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'warn',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };

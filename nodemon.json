@@ -9,7 +9,7 @@
   ],
   "watch": [
     "src/*",
-    ".env"
+    "rollup.config.js"
   ],
   "exec": "make start",
   "ext": "js,json,ts,env",
