@@ -22,6 +22,9 @@ module.exports = {
   rules: {
     'max-len': 'off',
     'no-console': 'off',
+    'no-nested-ternary': 'off',
+    'arrow-body-style': 'off',
+    'object-curly-newline': 'off',
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
