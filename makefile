@@ -2,6 +2,10 @@ SHELL := /bin/bash
 
 DIST ?= dist
 
+prepare:
+	npx husky install
+.PHONY: prepare
+
 lint:
 	npx eslint --fix .
 	npx tsc --noEmit
