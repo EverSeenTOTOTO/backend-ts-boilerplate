@@ -26,10 +26,6 @@ start: build
 	node ${DIST}/index.js
 .PHONY: start
 
-watch:
-	npx nodemon --config nodemon.json
-.PHONY: watch
-
 test:
 	npx jest --coverage --silent
 .PHONY: test
@@ -37,4 +33,3 @@ test:
 debug:
 	node --inspect-brk node_modules/jest/bin/jest.js --coverage --runInBand
 .PHONY: debug
-
