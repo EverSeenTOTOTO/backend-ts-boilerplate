@@ -9,7 +9,7 @@ prepare:
 lint:
 	npx eslint --fix .
 	npx tsc --noEmit
-	@echo -e '\033[1;32mNo lint errors found.'
+	@printf '\033[1;32mNo lint errors found.'
 .PHONY: lint
 
 clean:
@@ -19,7 +19,7 @@ clean:
 build: clean
 	npx tsc -p .  --emitDeclarationOnly
 	npx tsc-alias
-	npx rollup -c rollup.config.js
+	npx rollup -c rollup.config.js --bundleConfigAsCjs
 .PHONY: build
 
 start: build
