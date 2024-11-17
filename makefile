@@ -1,35 +1,27 @@
 SHELL := /bin/bash
 
-DIST ?= dist
-
 prepare:
-	npx husky install
+	pnpx husky install
 .PHONY: prepare
 
 lint:
-	npx eslint --fix .
-	npx tsc --noEmit
+	pnpx @biomejs/biome lint --write 
+	pnpx @biomejs/biome format --write
 	@printf '\033[1;32mNo lint errors found.'
 .PHONY: lint
 
-clean:
-	-rm -r ${DIST}
-.PHONY: clean
+dev:
+	bun --watch src/index.ts 
+.PHONY: dev
 
-build: clean
-	npx tsc -p .  --emitDeclarationOnly
-	npx tsc-alias
-	npx rollup -c rollup.config.js --bundleConfigAsCjs
-.PHONY: build
-
-start: build
-	node ${DIST}/index.js
+start:
+	bun src/index.ts
 .PHONY: start
 
 test:
-	npx jest --coverage --silent
+	bun test --coverage
 .PHONY: test
 
 debug:
-	node --inspect-brk node_modules/jest/bin/jest.js --coverage --runInBand
+	bun --inspect-brk src/index.ts
 .PHONY: debug
