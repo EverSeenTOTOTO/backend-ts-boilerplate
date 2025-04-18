@@ -1,9 +1,5 @@
 SHELL := /bin/bash
 
-prepare:
-	pnpx husky install
-.PHONY: prepare
-
 lint:
 	pnpx @biomejs/biome lint --write 
 	pnpx @biomejs/biome format --write
