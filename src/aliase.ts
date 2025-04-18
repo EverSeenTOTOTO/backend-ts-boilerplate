@@ -1,2 +1,2 @@
-export const world = 'typescript';
-export type World = 'typescript';
+export const world = "typescript";
+export type World = "typescript";

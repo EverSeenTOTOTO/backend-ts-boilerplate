@@ -1,5 +1,6 @@
-import { hello } from '@/index';
+import { expect, test } from "vitest";
+import { hello } from "@/index";
 
-test('hello world', () => {
-  expect(hello).toMatch('hello typescript');
+test("hello world", () => {
+	expect(hello).toBe("hello typescript");
 });
